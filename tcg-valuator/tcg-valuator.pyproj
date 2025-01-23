@@ -28,6 +28,23 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="app.py" />
+    <Compile Include="tcg_valuator_app\src\main.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="tcg_valuator_app\" />
+    <Folder Include="tcg_valuator_app\src\" />
+    <Folder Include="tcg_valuator_app\src\assets\" />
+    <Folder Include="tcg_valuator_app\storage\" />
+    <Folder Include="tcg_valuator_app\storage\data\" />
+    <Folder Include="tcg_valuator_app\storage\temp\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="tcg_valuator_app\.gitignore" />
+    <Content Include="tcg_valuator_app\pyproject.toml" />
+    <Content Include="tcg_valuator_app\README.md" />
+    <Content Include="tcg_valuator_app\src\assets\icon.png" />
+    <Content Include="tcg_valuator_app\storage\data\.gitkeep" />
+    <Content Include="tcg_valuator_app\storage\README.md" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Web.targets" />
   <!-- Specify pre- and post-build commands in the BeforeBuild and 
