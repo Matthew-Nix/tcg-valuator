@@ -6,7 +6,7 @@
     <ProjectGuid>cc410d2a-c12f-49fc-a352-2d4b856975d5</ProjectGuid>
     <ProjectHome>.</ProjectHome>
     <ProjectTypeGuids>{1b580a1a-fdb3-4b32-83e1-6407eb2722e6};{349c5851-65df-11da-9384-00065b846f21};{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
-    <StartupFile>tcg_valuator_app\src\main.py</StartupFile>
+    <StartupFile>main.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -17,6 +17,7 @@
     <Name>tcg-valuator</Name>
     <RootNamespace>tcg-valuator</RootNamespace>
     <WebBrowserPort>4449</WebBrowserPort>
+    <SuppressEnvironmentCreationPrompt>True</SuppressEnvironmentCreationPrompt>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -27,24 +28,15 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="app.py" />
-    <Compile Include="tcg_valuator_app\src\main.py" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="tcg_valuator_app\" />
-    <Folder Include="tcg_valuator_app\src\" />
-    <Folder Include="tcg_valuator_app\src\assets\" />
-    <Folder Include="tcg_valuator_app\storage\" />
-    <Folder Include="tcg_valuator_app\storage\data\" />
-    <Folder Include="tcg_valuator_app\storage\temp\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="tcg_valuator_app\.gitignore" />
-    <Content Include="tcg_valuator_app\pyproject.toml" />
-    <Content Include="tcg_valuator_app\README.md" />
-    <Content Include="tcg_valuator_app\src\assets\icon.png" />
-    <Content Include="tcg_valuator_app\storage\data\.gitkeep" />
-    <Content Include="tcg_valuator_app\storage\README.md" />
+    <Compile Include="app_layout.py" />
+    <Compile Include="board.py" />
+    <Compile Include="board_list.py" />
+    <Compile Include="data_store.py" />
+    <Compile Include="item.py" />
+    <Compile Include="main.py" />
+    <Compile Include="memory_store.py" />
+    <Compile Include="sidebar.py" />
+    <Compile Include="user.py" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Web.targets" />
   <!-- Specify pre- and post-build commands in the BeforeBuild and 
