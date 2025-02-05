@@ -29,14 +29,8 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="app_layout.py" />
-    <Compile Include="board.py" />
-    <Compile Include="board_list.py" />
-    <Compile Include="data_store.py" />
-    <Compile Include="item.py" />
     <Compile Include="main.py" />
-    <Compile Include="memory_store.py" />
     <Compile Include="sidebar.py" />
-    <Compile Include="user.py" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Web.targets" />
   <!-- Specify pre- and post-build commands in the BeforeBuild and 
