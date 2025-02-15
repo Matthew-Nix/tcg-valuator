@@ -1,7 +1,14 @@
 from tkinter import *
 from tkinter import ttk
+from valuator_collection import Valuator_Collection
 
 class Valuator_Menu:
+    def __new__(cls, root):
+        if not hasattr(cls, 'instance'):
+            cls.instance = super(Valuator_Menu, cls).__new__(cls)
+        return cls.instance
+
+
     def __init__(self, root):
         root.title("TCG Valuator")
 
@@ -30,10 +37,12 @@ class Valuator_Menu:
 
         # Display confirmation that card was added to collection
         self.display_message = StringVar()
+        self.collection_message = StringVar()
         ttk.Button(self.button_frame, text='Add to Collection', command=self.add_to_collection).grid(column=2, row = 2, sticky=W)
         ttk.Label(self.button_frame, textvariable=self.display_message).grid(column=1, row=2, sticky=(W))
-
         
+        # Display current collection list
+        ttk.Label(self.button_frame, textvariable=self.collection_message).grid(column=1, row=4, sticky=(W))
 
     def calculate(self, *args):
         try:
@@ -42,8 +51,11 @@ class Valuator_Menu:
         except ValueError:
             pass
 
-    def add_to_collection(self, *args):
+    def add_to_collection(self):
         try:
+            test_str = self.card_name.get()
+            Valuator_Collection.add_to_collection(Valuator_Collection(), test_str)
             self.display_message.set("Card added!")
+            self.collection_message.set("collection here: " + "".join(Valuator_Collection().get_collection()))
         except ValueError:
             pass
