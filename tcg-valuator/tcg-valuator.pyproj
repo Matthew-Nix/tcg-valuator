@@ -28,7 +28,6 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="feetometers.py" />
     <Compile Include="main.py" />
     <Compile Include="valuator.py" />
     <Compile Include="valuator_collection.py" />
