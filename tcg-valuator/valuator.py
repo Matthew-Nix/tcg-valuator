@@ -1,5 +1,3 @@
-from tkinter import *
-from tkinter import ttk
 from valuator_menu import Valuator_Menu
 from valuator_collection import Valuator_Collection
 
