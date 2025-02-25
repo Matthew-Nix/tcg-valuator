@@ -1,3 +1,5 @@
+from card_info import Card_Info
+
 class Valuator_Collection:
     def __new__(cls):
         if not hasattr(cls, 'instance'):

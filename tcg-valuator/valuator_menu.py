@@ -1,5 +1,6 @@
 from tkinter import *
 from tkinter import ttk
+from card_info import Card_Info
 from valuator_collection import Valuator_Collection
 
 class Valuator_Menu:
@@ -59,3 +60,6 @@ class Valuator_Menu:
             self.collection_message.set("collection here: " + "".join(Valuator_Collection().get_collection()))
         except ValueError:
             pass
+
+    #def get_card_info(self, card_name):
+    #    try:
