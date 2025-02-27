@@ -1,4 +1,4 @@
-from card_info import Card_Info
+from card_info import Card
 
 class Valuator_Collection:
     def __new__(cls):

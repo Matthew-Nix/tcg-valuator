@@ -1,6 +1,6 @@
 from tkinter import *
 from tkinter import ttk
-from card_info import Card_Info
+from card_info import Card
 from valuator_collection import Valuator_Collection
 
 class Valuator_Menu:
